@@ -1,32 +1,8 @@
 @import "_font-face.styl"
 @import "_libs.styl"
 @import "_vars.styl"
-
-// all
-*
-	-webkit-box-sizing border-box
-	-moz-box-sizing border-box
-	box-sizing border-box
-	&:before, &:after
-		-webkit-box-sizing border-box
-		-moz-box-sizing border-box
-		box-sizing border-box
-
-// placeholder
-*::-webkit-input-placeholder,
-*:-moz-placeholder,
-*::-moz-placeholder,
-*:-ms-input-placeholder
-	color #666
-	opacity 1
-
-// input required valid/invalid
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color #666
-body input:required:valid,
-body textarea:required:valid
-	color #666
+@import "_header.styl"
+@import "_content.styl"
 
 html, body
 	height 100%
@@ -39,6 +15,7 @@ body
 	font-family $default-font
 	overflow-x hidden
 	margin 0
+	background #F8F9FB
 
 img
 	display block
@@ -63,5 +40,18 @@ p
 
 a
 	transition .2s color ease-in
+	text-decoration none
+
+input:focus
+	outline none
+	
+// Custom css
+.wrapper
+	max-width 1240px
+	width 100%
+	padding 0 15px
+	margin 0 auto
+
+
 
 @import "_media.styl" // Always at the end

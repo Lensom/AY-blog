@@ -1,0 +1,45 @@
+.header
+	background-color $white
+	&-wrapper
+		display flex
+		justify-content space-between
+		padding 15px 0
+	&-item
+		display inline-block
+		padding 15px
+		a 
+			color $main
+			&:hover
+				color $mainhover
+	&-logo
+		a
+			display flex
+			align-items center
+			color $main
+			font-weight 700
+			&:hover
+				.logotype-ellipse
+					fill $black
+				.logotype-path
+					fill $white
+	&-content 
+		padding 60px 0
+		background-image url(../img/background-main1.jpg)
+		background-position bottom left
+		color #fff
+		font-weight 700
+		font-family $default-font
+		// font-family 'Oswald'
+	&-title 
+		margin-bottom 30px
+		font-size 32px
+	&-description
+		max-width 820px
+		font-size 18px
+.logotype
+	max-width 50px
+	padding-right 15px
+	&-ellipse
+		transition all .3s ease
+	&-path
+		transition all .3s ease

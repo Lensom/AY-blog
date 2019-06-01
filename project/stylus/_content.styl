@@ -1,0 +1,161 @@
+.content
+  width 78%
+  display flex
+  justify-content space-between
+  &-items
+    background-color $white
+    margin 60px 15px 30px 0
+  &-top
+    display flex
+    justify-content space-between
+  &-bottom
+    display flex
+    justify-content flex-start
+    background-color #f5f5f5
+    padding 15px
+    font-size 12px
+    color $main
+    a 
+      color $main
+      padding 4px 8px
+      border-radius 6px
+      background-color $white
+      margin-left 10px
+      transition background-color .3s ease
+      &:hover
+        background-color $main
+        color $white 
+  &-category
+    &-image 
+      position absolute
+      top 5px
+      left 5px
+      a 
+        padding 0 8px
+        display block
+        color $main
+        background-color $white
+        font-size 14px
+        transition all .3s ease
+        border-radius 6px
+        &:hover
+          background-color $main
+          color $white 
+  &-side
+    position relative
+    &:last-child
+      padding 0 15px 15px
+  &-image
+    max-width 900px
+    a 
+      display block
+      overflow hidden
+      &:hover
+        .content-image-url 
+          transform scale(1.2)
+    &-url
+      transition all .3s ease
+  &-title
+    font-size 24px
+    line-height 28px
+    margin-bottom 20px
+    a
+      color $main
+  &-item
+    margin-bottom 30px
+    padding 15px
+  
+.aside
+  width 22%
+  background-color #f8f9fb
+  margin 60px 0 0 30px
+  &-title
+    text-transform uppercase
+    font-weight bold
+    font-size 14px
+    margin-bottom 5px
+  &-search
+    margin-bottom 20px
+    padding 15px
+    background-color $white
+  &-categories
+    padding 15px
+    background-color $white
+  &-link
+    position relative
+    padding-left 22px
+    font-size 16px
+    color $main
+    display flex
+    justify-content space-between
+    &:after
+      position absolute
+      content ''
+      top 9px
+      left 0
+      width 9px
+      height 9px
+      background-image url(../img/link.svg)
+      transition all .3s ease
+    &:hover
+      &:after
+        transform rotate(45deg)
+        top 8px
+  &-link-wrapper
+    margin-bottom 3px
+  &-col
+    background-color $main
+    color $white
+    width 20px
+    height 20px
+    text-align center
+    border-radius 50%
+    display inline-block
+    position relative
+    display flex
+    align-items center
+    justify-content center
+    margin-top 5px
+    span 
+      font-size 10px
+
+  input[type="submit"]
+    border none
+    background $main
+    color $white
+    padding 10px 15px
+    border-top-right-radius 6px
+    border-bottom-right-radius 6px
+    cursor pointer
+
+#search-form
+  display flex
+  justify-content space-between
+fieldset
+  border none
+  padding 0
+  margin 0
+  width 100%
+  max-height 40px
+  input
+    border none
+    padding 0
+    margin 0
+    height 100%
+    width 100%
+    padding 10px 15px
+    font-size 14px
+    border-radius 6px 
+    border 2px solid $main
+    border-top-right-radius 0
+    border-bottom-right-radius 0
+    border-right none
+.main-wrapper
+  display flex
+  justify-content space-between
+
+.margin
+  margin-right 20px
+
+i.fa
+  margin-right 5px
