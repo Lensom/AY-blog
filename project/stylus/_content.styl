@@ -61,6 +61,8 @@
     margin-bottom 20px
     a
       color $main
+      &:hover
+        color $black
   &-item
     margin-bottom 30px
     padding 15px
@@ -81,6 +83,38 @@
   &-categories
     padding 15px
     background-color $white
+    margin-bottom 20px
+  &-popular
+    padding 15px
+    background-color $white
+    margin-bottom 20px
+  &-post
+    margin-bottom 30px
+    &-bottom
+      display flex
+      justify-content space-between
+      font-size 12px
+    &-title
+      font-size 16px
+      margin-bottom 5px
+  &-comments
+    padding 15px
+    background-color $white
+    margin-bottom 20px
+  &-comment
+    margin 10px 0 20px
+    &-wrapper
+      display flex
+      justify-content space-between
+      margin-top 10px
+    &-nick
+      font-size 14px
+    &-text
+      font-size 12px
+    .content-date
+      font-size 12px
+    &-post
+      font-size 12px
   &-link
     position relative
     padding-left 22px
@@ -159,3 +193,5 @@ fieldset
 
 i.fa
   margin-right 5px
+
+

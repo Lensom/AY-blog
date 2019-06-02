@@ -3,6 +3,7 @@
 @import "_vars.styl"
 @import "_header.styl"
 @import "_content.styl"
+@import "_footer.styl"
 
 html, body
 	height 100%
@@ -16,6 +17,7 @@ body
 	overflow-x hidden
 	margin 0
 	background #F8F9FB
+	// background-color rgba(63, 171, 254, .05)
 
 img
 	display block
@@ -41,6 +43,9 @@ p
 a
 	transition .2s color ease-in
 	text-decoration none
+	color $main
+	&:hover 
+		color $black
 
 input:focus
 	outline none
