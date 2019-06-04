@@ -221,6 +221,20 @@
   background-color: #fff;
   margin-bottom: 20px;
 }
+.aside-tags {
+  padding: 15px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.aside-tag-size {
+  font-size: 10px;
+}
+.aside-tag-size-up {
+  font-size: 16px;
+}
+.aside-tag-size-up-2 {
+  font-size: 13px;
+}
 .aside-post {
   margin-bottom: 30px;
 }
@@ -374,6 +388,9 @@ fieldset input {
 i.fa {
   margin-right: 5px;
 }
+.navigation {
+  text-align: center;
+}
 .footer {
   text-align: center;
   background-color: #333;
@@ -400,7 +417,7 @@ i.fa {
   font-size: 14px;
   background-color: #fff;
 }
-form {
+.form {
   max-width: 320px;
 }
 .form-group {
@@ -412,6 +429,8 @@ form {
   width: 100%;
   padding: 10px 15px;
   font-size: 16px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 .form-input:focus {
   border-color: #000;
@@ -419,8 +438,13 @@ form {
 .form-text {
   width: 100%;
 }
-.form .textarea {
-  max-width: 320px;
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 html,
 body {
